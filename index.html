@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Arial;
+}
+
+input[type=text], select {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+input[type=submit] {
+  width: 10%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+</style>
+<body>
+
+<h3>Interview Questionnaire Form</h3>
+
+
+<div class="container">
+  <form action="/action_page.php">
+    <label for="fname">First Name</label>
+    <input type="text" id="fname" name="firstname"  placeholder="Your name.." required>
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+
+    <label for="lname">Age</label><br><br>
+    <input type="number" id="age" name="age" placeholder="Your age.." required>
+<br>
+<br>
+    <label for="sex">Sex</label>
+    <select id="sex" name="sex" required>
+      <option value=""></option>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+    </select>
+  
+    <label for="address">Address</label>
+    <input type="text" id="address" name="Street" placeholder="Street Address" required>
+    <input type="text" id="line2" name="line2" placeholder="Street Address Line 2" required>
+    <input type="text" id="city" name="city" placeholder="city" required>
+    <input type="text" id="state" name="state" placeholder="State/Province" required>
+    <input type="text" id="Zip" name="Zip" placeholder="Postal/Zip Code" required>
+
+    <select id="country" name="country" required>
+        <option value="">Select your Country</option>
+        <option value="afg">Afghanistan</option>
+        <option value="alb">Albania</option>
+        <option value="alg">Algeria</option>
+        <option value="and">Andorra</option>
+        <option value="ang">Angola</option>
+        <option value="anb">Antigua and Barbuda</option>
+        <option value="arg">Argentina</option>
+        <option value="arm">Armenia</option>
+        <option value="aus">Australia</option>
+        <option value="ast">Austria</option>
+        <option value="aste">Austrian Empire</option>
+        <option value="azb">Azerbaijan</option>
+        <option value="bhn">Bahrain</option>
+        <option value="bng">Bangladesh</option>
+        <option value="brds">Barbados</option>
+        <option value="blgm">Belgium</option>
+        <option value="blv">Bolivia</option>
+        <option value="bswn">Botswana</option>
+        <option value="brzl">Brazil</option>
+        <option value="brma">Burma</option>
+        <option value="bnd">Burundi</option>
+        <option value="cnd">Canada</option>
+        <option value="cle">Chile</option>
+        <option value="chn">China</option>
+        <option value="cmb">Colombia</option>
+        <option value="cuba">Cuba</option>
+        <option value="cyprus">Cyprus</option>
+        <option value="denmark">Denmark</option>
+        <option value="dominica">Dominica</option>
+        <option value="egypt">Egypt</option>
+        <option value="eritrea">Eritrea</option>
+        <option value="ethiopia">Ethiopia</option>
+        <option value="finland">Finland</option>
+        <option value="france">France</option>
+        <option value="georgia">Georgia</option>
+        <option value="germany">Germany</option>
+        <option value="greece">Greece</option>
+        <option value="grenada">Grenada</option>
+        <option value="guinea">Guinea</option>
+        <option value="guyana">Guyana</option>
+        <option value="hawaii">Hawaii</option>
+        <option value="hungary">Hungary</option>
+        <option value="iceland">Iceland</option>
+        <option value="india">India</option>
+        <option value="indonesia">Indonesia</option>
+        <option value="iran">Iran</option>
+        <option value="iraq">Iraq</option>
+        <option value="ireland">Ireland</option>
+        <option value="israel">Israel</option>
+        <option value="italy">Italy</option>
+        <option value="japan">Japan</option>
+        <option value="jordan">Jordan</option>
+        <option value="kenya">Kenya</option>
+        <option value="kiribati">Kiribati</option>
+        <option value="korea">Korea</option>
+        <option value="kuwait">Kuwait</option>
+        <option value="laos">Laos</option>
+        <option value="lebanon">Lebanon</option>
+        <option value="lesotho">Lesotho</option>
+        <option value="liberia">Liberia</option>
+        <option value="libya">Libya</option>
+        <option value="lithuania">Lithuania</option>
+        <option value="luxembourg">Luxembourg</option>
+        <option value="malawi">Malawi</option>
+        <option value="malaysia">Malaysia</option>
+        <option value="maldives">Maldives</option>
+        <option value="mauritania">Mauritania</option>
+        <option value="mauritius">Mauritius</option>
+        <option value="mexico">Mexico</option>
+        <option value="mozambique">Mozambique</option>
+        <option value="nepal">Nepal</option>
+        <option value="new Zealand">New Zealand</option>
+        <option value="nigeria">Nigeria</option>
+        <option value="north Macedonia">North Macedonia</option>
+        <option value="norway">Norway</option>
+        <option value="oman">Oman</option>
+        <option value="pakistan">Pakistan</option>
+        <option value="paraguay">Paraguay</option>
+        <option value="peru">Peru</option>
+        <option value="philippines">Philippines</option>
+        <option value="poland">Poland</option>
+        <option value="portugal">Portugal</option>
+        <option value="qatar">Qatar</option>
+        <option value="romania">Romania</option>
+        <option value="russia">Russia</option>
+        <option value="saudi Arabia">Saudi Arabia</option>
+        <option value="senegal">Senegal</option>
+        <option value="serbia">Serbia</option>
+        <option value="singapore">Singapore</option>
+        <option value="slovenia">Slovenia</option>
+        <option value="south Africa">South Africa</option>
+        <option value="sri Lanka">Sri Lanka</option>
+        <option value="sweden">Sweden</option>
+        <option value="syriafemale">Syria</option>
+        <option value="tajikistan">Tajikistan</option>
+        <option value="tunisia">Tunisia</option>
+        <option value="turkey">Turkey</option>
+        <option value="tuvalu">Tuvalu</option>
+        <option value="uganda">Uganda</option>
+        <option value="uruguay">Uruguay</option>
+        <option value="uzbekistan">Uzbekistan</option>
+        <option value="venezuela">Venezuela</option>
+        <option value="vietnam">Vietnam</option>
+        <option value="yemen">Yemen</option>
+        <option value="zambia">Zambia</option>
+        <option value="zimbabwe">Zimbabwe</option>
+
+      </select>
+
+      <label for="phoneno">Phone Number</label>
+      <input type="text" id="phone" name="phone" placeholder="Phone Number" required>
+<br>
+      <label for="emailid">E-mail</label>
+      <input type="text" id="phone" name="emailid" placeholder="E-mail" required>
+
+      <label for="selfinfo">Describe yourself in few words.</label><br>
+      <textarea id="selfinfo" rows="4" cols="40" required></textarea>
+      <br>
+<br>
+      <label for="skills">What are your major skills regarding the job, you have applied for?</label><br>
+      <textarea id="skills" rows="4" cols="40" required></textarea>
+      <br>
+<br>
+      <label for="eduqualification">What is your educational qualification?</label><br>
+      <textarea id="eduqualification" rows="4" cols="40" required></textarea>
+      <br>
+<br>
+      <label for="prevjob">Why did you left your previous job?</label><br>
+      <textarea id="prevjob" rows="4" cols="40" required></textarea>
+      <br>
+<br>
+      <label for="organization">Why do you want to join our organization?</label><br>
+      <textarea id="organization" rows="4" cols="40" required></textarea>
+      <br>
+<br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+</body>
+</html>
